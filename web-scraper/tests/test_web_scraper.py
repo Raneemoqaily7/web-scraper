@@ -11,7 +11,7 @@ def test_get_citations_needed_count():
 
 def test_get_citations_needed_report():
      
-    actual = get_citations_needed_report("https://en.wikipedia.org/wiki/History_of_Mexico").strip().startswith("Citation needed pqragraph")
+    actual = get_citations_needed_report("https://en.wikipedia.org/wiki/History_of_Mexico").startswith("Citation needed pqragraph")
     expected = True
    
     assert actual == expected
